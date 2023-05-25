@@ -33,32 +33,104 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     const questions = [
       {
-        'questiontext': "What's your favourite colors?",
+        'questiontext':
+            "How would you rate the overall user experience of the app?",
         'answers': [
-          {'text': 'Black', 'score': 10},
-          {'text': 'Red', 'score': 7},
-          {'text': 'Yellow', 'score': 4},
-          {'text': 'White', 'score': 1}
-        ],
+          {'text': 'Excellent', 'score': 10},
+          {'text': 'Good', 'score': 7},
+          {'text': 'Average', 'score': 4},
+          {'text': 'Poor', 'score': 1}
+        ]
       },
       {
-        'questiontext': "What's your favourite animal?",
+        'questiontext': "How useful did you find the trip planning feature?",
         'answers': [
-          {'text': 'Lion', 'score': 10},
-          {'text': 'Panther', 'score': 7},
-          {'text': 'Bull', 'score': 4},
-          {'text': 'Dog', 'score': 1}
-        ],
+          {'text': 'Very useful', 'score': 10},
+          {'text': 'Somewhat useful', 'score': 7},
+          {'text': 'Not very useful', 'score': 4},
+          {'text': 'Not useful at all', 'score': 1}
+        ]
       },
       {
-        'questiontext': "Who's your favourite food type?",
+        'questiontext':
+            "How accurate and reliable were the real-time navigation instructions and live locations?",
         'answers': [
-          {'text': 'Non-Veg', 'score': 10},
-          {'text': 'Egg', 'score': 7},
-          {'text': 'Veg', 'score': 4},
-          {'text': 'Vegan', 'score': 1}
-        ],
-      }
+          {'text': 'Very accurate and reliable', 'score': 10},
+          {'text': 'Somewhat accurate and reliable', 'score': 7},
+          {'text': 'Not very accurate and reliable', 'score': 4},
+          {'text': 'Not accurate and reliable at all', 'score': 1}
+        ]
+      },
+      {
+        'questiontext':
+            "Did you find the group chats and calls feature helpful for staying connected with other travelers?",
+        'answers': [
+          {'text': 'Extremely helpful', 'score': 10},
+          {'text': 'Moderately helpful', 'score': 7},
+          {'text': 'Slightly helpful', 'score': 4},
+          {'text': 'Not helpful at all', 'score': 1}
+        ]
+      },
+      {
+        'questiontext':
+            "How effective was the translation service for translating signboards, menu cards, and speech?",
+        'answers': [
+          {'text': 'Very effective', 'score': 10},
+          {'text': 'Somewhat effective', 'score': 7},
+          {'text': 'Not very effective', 'score': 4},
+          {'text': 'Not effective at all', 'score': 1}
+        ]
+      },
+      {
+        'questiontext':
+            "How easy was it to track expenses and settle bills among group members using the built-in expense tracker?",
+        'answers': [
+          {'text': 'Very easy', 'score': 10},
+          {'text': 'Somewhat easy', 'score': 7},
+          {'text': 'Not very easy', 'score': 4},
+          {'text': 'Not easy at all', 'score': 1}
+        ]
+      },
+      {
+        'questiontext':
+            "Did the currency conversion feature help you manage your finances while traveling abroad?",
+        'answers': [
+          {'text': 'Yes, it was very helpful', 'score': 10},
+          {'text': 'It was somewhat helpful', 'score': 7},
+          {'text': 'Not very helpful', 'score': 4},
+          {'text': 'Not helpful at all', 'score': 1}
+        ]
+      },
+      {
+        'questiontext':
+            "Were the personalized recommendations for accommodations, attractions, and restaurants based on your preferences useful?",
+        'answers': [
+          {'text': 'Extremely useful', 'score': 10},
+          {'text': 'Moderately useful', 'score': 7},
+          {'text': 'Slightly useful', 'score': 4},
+          {'text': 'Not useful at all', 'score': 1}
+        ]
+      },
+      {
+        'questiontext':
+            "How well did the app perform in offline mode with limited connectivity?",
+        'answers': [
+          {'text': 'Worked perfectly offline', 'score': 10},
+          {'text': 'Worked somewhat well offline', 'score': 7},
+          {'text': 'Had limited functionality in offline mode', 'score': 4},
+          {'text': 'Did not work offline at all', 'score': 1}
+        ]
+      },
+      {
+        'questiontext':
+            "How secure and user-friendly did you find the user authentication process?",
+        'answers': [
+          {'text': 'Very secure and user-friendly', 'score': 10},
+          {'text': 'Moderately secure and user-friendly', 'score': 7},
+          {'text': 'Not very secure and user-friendly', 'score': 4},
+          {'text': 'Not secure and user-friendly at all', 'score': 1}
+        ]
+      },
     ];
 
 // This is a function called resetQuiz, which resets the quiz by setting questionIndex and
