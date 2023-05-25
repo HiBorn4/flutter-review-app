@@ -7,7 +7,7 @@ import "result.dart";
 
 // This is the main entry point for the application, and it runs the MyApp widget.
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 // This is the MyApp widget, which extends StatefulWidget. It creates a new _MyAppState
 // object when the widget is built.
@@ -24,6 +24,7 @@ class MyApp extends StatefulWidget {
 // variables, questionIndex and total_score.
 class _MyAppState extends State<MyApp> {
   var questionIndex = 0;
+  // ignore: non_constant_identifier_names
   int total_score = 0;
 
 // This is the build method, which creates the UI for the app. It defines a const list of
@@ -37,7 +38,8 @@ class _MyAppState extends State<MyApp> {
           {'text': 'Black', 'score': 10},
           {'text': 'Red', 'score': 7},
           {'text': 'Yellow', 'score': 4},
-          {'text': 'White', 'score': 1}],
+          {'text': 'White', 'score': 1}
+        ],
       },
       {
         'questiontext': "What's your favourite animal?",
@@ -45,7 +47,8 @@ class _MyAppState extends State<MyApp> {
           {'text': 'Lion', 'score': 10},
           {'text': 'Panther', 'score': 7},
           {'text': 'Bull', 'score': 4},
-          {'text': 'Dog', 'score': 1}],
+          {'text': 'Dog', 'score': 1}
+        ],
       },
       {
         'questiontext': "Who's your favourite food type?",
@@ -53,7 +56,8 @@ class _MyAppState extends State<MyApp> {
           {'text': 'Non-Veg', 'score': 10},
           {'text': 'Egg', 'score': 7},
           {'text': 'Veg', 'score': 4},
-          {'text': 'Vegan', 'score': 1}],
+          {'text': 'Vegan', 'score': 1}
+        ],
       }
     ];
 
@@ -72,14 +76,10 @@ class _MyAppState extends State<MyApp> {
     void answerQuestions(int score) {
       total_score += score;
       setState(() {
-          questionIndex = questionIndex + 1;
-        });
-      print(questionIndex);
+        questionIndex = questionIndex + 1;
+      });
       if (questionIndex < 2) {
-        print("We have more Questions !");
-      } else {
-        print("You did it !");
-      }
+      } else {}
     }
 
     return MaterialApp(

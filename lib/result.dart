@@ -18,21 +18,18 @@ class Result extends StatelessWidget {
     var resultText = "You did it !";
     if (resultscore <= 8) {
       resultText = 'You are Awesome and Innocent !';
-    }
-    else if (resultscore <= 12) {
+    } else if (resultscore <= 12) {
       resultText = 'You are Likeable !';
-    }
-    else if (resultscore <= 16) {
+    } else if (resultscore <= 16) {
       resultText = 'You are Strange !';
-    }
-    else if (resultscore <= 20) {
+    } else if (resultscore <= 20) {
       resultText = 'You are Dark !';
-    }
-    else {
+    } else {
       resultText = 'You are Dope !';
     }
     return resultText;
   }
+
 // This build method returns the layout of the widget. It displays the result phrase calculated
 // by resultPhrase in a Text widget with a specified style. It also displays a TextButton widget
 // to restart the quiz when clicked. The layout is centered using the Center widget, and the
@@ -50,9 +47,7 @@ class Result extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          TextButton(
-            onPressed: resetQuiz,
-            child: Text("Restart Quiz"))
+          TextButton(onPressed: resetQuiz, child: const Text("Restart Quiz"))
         ],
       ),
     );

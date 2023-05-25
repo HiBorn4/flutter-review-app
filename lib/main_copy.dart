@@ -3,15 +3,17 @@
 import 'package:flutter/material.dart';
 import "./question.dart";
 import "./answer.dart";
-void main () => runApp(MyApp());
 
+void main() => runApp(const MyApp());
 
 // _ Convention of privating
 // This defines a stateful widget MyApp which has mutable state.
 // createState() method returns an instance of _MyAppState.
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
-  State <StatefulWidget> createState() {
+  State<StatefulWidget> createState() {
     return _MyAppState();
   }
 }
@@ -27,21 +29,24 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       questionIndex = questionIndex + 1;
     });
-    print(questionIndex);
   }
+
 // build method returns the UI of the widget.
 // questions is a list of maps, which stores questions and their respective answers.
   @override
   Widget build(BuildContext context) {
     const questions = [
-      {'questiontext': "What \'s your favourite places?",
-      'answers':['Black', 'Red', 'Green', 'Blue'],
+      {
+        'questiontext': "What 's your favourite places?",
+        'answers': ['Black', 'Red', 'Green', 'Blue'],
       },
-      {'questiontext': "What \'s your favourite animal?",
-      'answers':['Lion', 'Cheetah', 'Shark', 'Panther'],
+      {
+        'questiontext': "What 's your favourite animal?",
+        'answers': ['Lion', 'Cheetah', 'Shark', 'Panther'],
       },
-      {'questiontext': "Who \'s your favourite food?",
-      'answers':['Continental', 'Pizza', 'Local', 'Burger'],
+      {
+        'questiontext': "Who 's your favourite food?",
+        'answers': ['Continental', 'Pizza', 'Local', 'Burger'],
       }
     ];
 // This is the main UI for the app.
@@ -52,41 +57,40 @@ class _MyAppState extends State<MyApp> {
 // The ... operator spreads the list of answers returned by the map function into separate widgets created using the Answer widget.
 // answerQuestions is passed as a callback function to the Answer widget which updates the state when an answer is selected.
     return MaterialApp(
-      home: Scaffold (
+      home: Scaffold(
         appBar: AppBar(
-          title: const Text("Travel App"),
-          backgroundColor: const Color.fromARGB(255, 255, 37, 37)
-        ),
-      body: Column(
-        children: [
-            Question(questions[questionIndex%3]['questiontext'].toString(),),
-            // Text(questions.elementAt(0)),
-            // ElevatedButton(
-            //   onPressed: answerQuestions,
-            //   child: Text("Answer 1")
-            //   ),
-            ...(questions[questionIndex%3]['answers'] as List<String>).map((answer) {
-              return Answer(answerQuestions, answer);
-            }).toList()
-            // Answer(answerQuestions),
-            // ElevatedButton(
-            //   onPressed: answerQuestions,
-            //   // onPressed: () => print("Answer 2 Choosen !"),
-            //   child: Text("Answer 2")
-            //   ),
-            // Answer(answerQuestions),
-            // ElevatedButton(
-            //   // onPressed: () {
-            //   //   print("Answer 3 Choosen !");
-            //   // },
-            //   onPressed: answerQuestions,
-            //   child: Text("Answer 3")
-            //   ),
-            // Answer(answerQuestions)
-          ]
-        ),
+            title: const Text("Travel App"),
+            backgroundColor: const Color.fromARGB(255, 255, 37, 37)),
+        body: Column(children: [
+          Question(
+            questions[questionIndex % 3]['questiontext'].toString(),
+          ),
+          // Text(questions.elementAt(0)),
+          // ElevatedButton(
+          //   onPressed: answerQuestions,
+          //   child: Text("Answer 1")
+          //   ),
+          ...(questions[questionIndex % 3]['answers'] as List<String>)
+              .map((answer) {
+            return Answer(answerQuestions, answer);
+          }).toList()
+          // Answer(answerQuestions),
+          // ElevatedButton(
+          //   onPressed: answerQuestions,
+          //   // onPressed: () => print("Answer 2 Choosen !"),
+          //   child: Text("Answer 2")
+          //   ),
+          // Answer(answerQuestions),
+          // ElevatedButton(
+          //   // onPressed: () {
+          //   //   print("Answer 3 Choosen !");
+          //   // },
+          //   onPressed: answerQuestions,
+          //   child: Text("Answer 3")
+          //   ),
+          // Answer(answerQuestions)
+        ]),
       ),
     );
   }
 }
-

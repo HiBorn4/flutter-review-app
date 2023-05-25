@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class Question extends StatelessWidget {
   final String questionText;
 
-  Question(this.questionText);
+  const Question(this.questionText, {super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container (
+    return Container(
       width: double.infinity,
-      margin: EdgeInsets.all(10),
-        child : Text (
+      margin: const EdgeInsets.all(10),
+      child: Text(
         questionText,
-        style: TextStyle (fontSize: 25),
+        style: const TextStyle(fontSize: 25),
         textAlign: TextAlign.center,
       ),
     );
