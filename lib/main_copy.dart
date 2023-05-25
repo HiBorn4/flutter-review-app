@@ -54,8 +54,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold (
         appBar: AppBar(
-          title: Text("Travel App"),
-          backgroundColor: Color.fromARGB(255, 255, 37, 37)
+          title: const Text("Travel App"),
+          backgroundColor: const Color.fromARGB(255, 255, 37, 37)
         ),
       body: Column(
         children: [
