@@ -12,16 +12,18 @@ import 'question.dart';
 class Quiz extends StatelessWidget {
 //  declares a final variable called answerQuestions which is a function that takes an
 // integer parameter and returns void.
-  final void Function(int) answerQuestions; // a function that takes an int parameter and returns void
+  final void Function(int)
+      answerQuestions; // a function that takes an int parameter and returns void
 //  declares a final variable called questionIndex of type int, which represents the current
 // index of the question being displayed.
   final int questionIndex; // an int representing the current question index
 // declares a final variable called questions of type List<Map<String, Object>>, which
 // represents the list of questions and answers for the quiz.
-  final List<Map<String, Object>> questions; // a list of maps, each map contains a question and its answers
+  final List<Map<String, Object>>
+      questions; // a list of maps, each map contains a question and its answers
 
-  const Quiz(
-      this.answerQuestions, this.questionIndex, this.questions, {Key? key})
+  const Quiz(this.answerQuestions, this.questionIndex, this.questions,
+      {Key? key})
       : super(key: key);
 
 // Question is a custom widget which is being called with a string argument to display the
@@ -29,18 +31,32 @@ class Quiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Question(
-          questions[questionIndex]['questiontext'].toString(),
+        Column(
+          children: [
+            Question(
+              questions[questionIndex]['questiontext'].toString(),
+            ),
+          ],
         ),
-// This section is using the spread operator ... to expand the contents of the List of answers
-// returned by .map() into the Column children. The .map() method applies the given function
-// to each item of the list. Here, it maps the List<Map<String, Object>> of answers to a List
-// of Answer widgets. Each Answer widget is given a callback function that takes an integer
-// argument, and the answer text to display on the button.
-        ...(questions[questionIndex]['answers'] as List<Map<String, Object>>).map((answer) {
-          return Answer(() => answerQuestions(answer['score'] as int), answer['text'].toString());
-        }).toList(),
+        // This section is using the spread operator ... to expand the contents of the List of answers
+        // returned by .map() into the Column children. The .map() method applies the given function
+        // to each item of the list. Here, it maps the List<Map<String, Object>> of answers to a List
+        // of Answer widgets. Each Answer widget is given a callback function that takes an integer
+        // argument, and the answer text to display on the button.
+        Column(
+          children: [
+            ...(questions[questionIndex]['answers']
+                    as List<Map<String, Object>>)
+                .map((answer) {
+              return Answer(
+                () => answerQuestions(answer['score'] as int),
+                answer['text'].toString(),
+              );
+            }).toList(),
+          ],
+        ),
       ],
     );
   }

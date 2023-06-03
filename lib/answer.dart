@@ -19,20 +19,23 @@ class Answer extends StatelessWidget {
 // answertext string in the button.
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      // color: Colors.black87,
-      child: ElevatedButton(
-              onPressed: selectHandler,
-              style: ElevatedButton.styleFrom(
-                foregroundColor: Color.alphaBlend(
-                    const Color.fromARGB(255, 116, 247, 93),
-                    Colors.red.shade300),
-                  backgroundColor: Color.alphaBlend(
-                    const Color.fromARGB(255, 255, 106, 95),
-                    Colors.black)
-              ),
-              child: Text(answertext),
+    return FractionallySizedBox(
+      widthFactor: 0.9,
+      child: SizedBox(
+        // width: double.infinity,
+        // color: Colors.black87,
+        child: ElevatedButton(
+          onPressed: selectHandler,
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.black.withOpacity(0.8),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(1000000000),
+            ),
+            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+          ),
+          child: Text(answertext),
+        ),
       ),
     );
   }

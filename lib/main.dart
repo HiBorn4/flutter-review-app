@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
           {'text': 'Excellent', 'score': 10},
           {'text': 'Good', 'score': 7},
           {'text': 'Average', 'score': 4},
-          {'text': 'Poor', 'score': 1}
+          {'text': 'Poor', 'score': 1},
         ]
       },
       {
@@ -155,14 +155,14 @@ class _MyAppState extends State<MyApp> {
     }
 
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-            title: const Text("Travel App"),
-            backgroundColor: const Color.fromARGB(255, 255, 37, 37)),
-        body: questionIndex < questions.length
-            ? Quiz(answerQuestions, questionIndex, questions)
-            : Result(total_score, resetQuiz),
+        home: Scaffold(
+      appBar: AppBar(
+        title: const Text("TravelGenie"),
+        backgroundColor: Colors.black,
       ),
-    );
+      body: questionIndex < questions.length
+          ? Quiz(answerQuestions, questionIndex, questions)
+          : Result(total_score, resetQuiz),
+    ));
   }
 }

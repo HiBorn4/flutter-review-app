@@ -12,24 +12,6 @@ class Result extends StatelessWidget {
   final VoidCallback resetQuiz;
   const Result(this.resultscore, this.resetQuiz, {super.key});
 
-// This function resultPhrase calculates the result text to be displayed based on the total
-// score obtained by the user. It returns a string with the result text.
-  String get resultPhrase {
-    var resultText = "You did it !";
-    if (resultscore <= 8) {
-      resultText = 'You are Awesome and Innocent !';
-    } else if (resultscore <= 12) {
-      resultText = 'You are Likeable !';
-    } else if (resultscore <= 16) {
-      resultText = 'You are Strange !';
-    } else if (resultscore <= 20) {
-      resultText = 'You are Dark !';
-    } else {
-      resultText = 'You are Dope !';
-    }
-    return resultText;
-  }
-
 // This build method returns the layout of the widget. It displays the result phrase calculated
 // by resultPhrase in a Text widget with a specified style. It also displays a TextButton widget
 // to restart the quiz when clicked. The layout is centered using the Center widget, and the
@@ -38,16 +20,28 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          Text(
-            resultPhrase,
-            style: const TextStyle(
+          const Text(
+            "Thank You For Your Response",
+            style: TextStyle(
               fontSize: 36,
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
           ),
-          TextButton(onPressed: resetQuiz, child: const Text("Restart Quiz"))
+          ElevatedButton(
+            onPressed: resetQuiz,
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Colors.white,
+              backgroundColor: Colors.black.withOpacity(0.8),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            ),
+            child: const Text("Reconsider Your Review"),
+          )
         ],
       ),
     );
