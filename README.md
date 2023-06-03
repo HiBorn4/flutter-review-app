@@ -17,11 +17,31 @@ Welcome to the Flutter Review the App repository! This app is designed to collec
 
 Here are some screenshots of the Flutter Review the App in action:
 
-![Review Questions Screen](screenshots/expenses.png)
+![Review Questions Screen](screenshots/accomod.png)
 _Users can rate different aspects of the app by answering a series of questions._
 
-![Result Screen](screenshots/result_screen.png)
-_The app generates a result based on the user's responses, providing an overall rating or summary._
+![Authentication Screen](screenshots/authentication.png)
+_User authentication screen for secure access._
+
+![Currency Screen](screenshots/currency.png)
+_User can select their preferred currency for calculations._
+
+![End Screen](screenshots/end.png)
+_Screen displayed at the end of the review process._
+
+![Expense Screen](screenshots/expense.png)
+_User can rate the expense management feature of the app._
+
+![Experience Screen](screenshots/experience.png)
+_User can rate their overall experience with the app._
+
+![Group Chat Screen](screenshots/grpChat.png)
+_Screen showing the group chat feature of the app._
+
+![Location Screen](screenshots/location.png)
+_User can rate the accuracy of the location feature._
+
+<!-- ![Offline Mode Screen]( -->
 
 ## Getting Started
 
