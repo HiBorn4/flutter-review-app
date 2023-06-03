@@ -17,7 +17,7 @@ Welcome to the Flutter Review the App repository! This app is designed to collec
 
 Here are some screenshots of the Flutter Review the App in action:
 
-![Review Questions Screen](screenshots/questions_screen.png)
+![Review Questions Screen](screenshots/expenses.png)
 _Users can rate different aspects of the app by answering a series of questions._
 
 ![Result Screen](screenshots/result_screen.png)
