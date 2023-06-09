@@ -19,33 +19,41 @@ Welcome to the Flutter Review the App repository! This app is designed to collec
 
 Here are some screenshots of the Flutter Review the App in action:
 
-convert (screenshots/accomod.png) -resize 10x10 screenshots/accomod_resized.png
-
-![Review Questions Screen]<img src="screenshots/accomod.png" width="400">
 _Users can rate different aspects of the app by answering a series of questions._
+<img src="screenshots/accomod.png" width="400">
 
-![Authentication Screen](screenshots/authentication.png)
+
+Authentication Screen
 _User authentication screen for secure access._
+<img src="screenshots/authentication.png" width="400">
 
-![Currency Screen](screenshots/currency.png)
+Currency Screen
 _User can select their preferred currency for calculations._
+<img src="screenshots/currency.png" width="400">
 
-![End Screen](screenshots/end.png)
+End Screen
 _Screen displayed at the end of the review process._
+<img src="screenshots/end.png" width="400">
 
-![Expense Screen](screenshots/expense.png)
+Expense Screen
 _User can rate the expense management feature of the app._
+<img src="screenshots/expense.png" width="400">
 
-![Experience Screen](screenshots/experience.png)
+Experience Screen
 _User can rate their overall experience with the app._
+<img src="screenshots/experience.png" width="400">
 
-![Group Chat Screen](screenshots/grpChat.png)
+Group Chat Screen
 _Screen showing the group chat feature of the app._
+<img src="screenshots/grpChat.png" width="400">
 
-![Location Screen](screenshots/location.png)
+Location Screen
 _User can rate the accuracy of the location feature._
+<img src="screenshots/location.png" width="400">
 
-<!-- ![Offline Mode Screen]( -->
+Offline Mode Screen
+<img src="screenshots/offline.png" width="400">
+
 
 ## Getting Started
 
