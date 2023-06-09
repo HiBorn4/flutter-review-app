@@ -13,47 +13,43 @@ Welcome to the Flutter Review the App repository! This app is designed to collec
 - **Save user responses**: Save the user's feedback and responses for further analysis and improvement.
 - **Simple and intuitive user interface**: Enjoy a visually appealing and user-friendly interface for a seamless reviewing experience.
 
-## Screenshots
+<h2>Screenshots</h2>
 
+<p>Here are some screenshots of the Flutter Review the App in action:</p>
 
-
-Here are some screenshots of the Flutter Review the App in action:
-
-_Users can rate different aspects of the app by answering a series of questions._
+<p><em>Users can rate different aspects of the app by answering a series of questions.</em></p>
 <img src="screenshots/accomod.png" width="400">
 
-
-Authentication Screen
-_User authentication screen for secure access._
+<p><strong>Authentication Screen</strong></p>
+<p>User authentication screen for secure access.</p>
 <img src="screenshots/authentication.png" width="400">
 
-Currency Screen
-_User can select their preferred currency for calculations._
+<p><strong>Currency Screen</strong></p>
+<p>User can select their preferred currency for calculations.</p>
 <img src="screenshots/currency.png" width="400">
 
-End Screen
-_Screen displayed at the end of the review process._
+<p><strong>End Screen</strong></p>
+<p>Screen displayed at the end of the review process.</p>
 <img src="screenshots/end.png" width="400">
 
-Expense Screen
-_User can rate the expense management feature of the app._
+<p><strong>Expense Screen</strong></p>
+<p>User can rate the expense management feature of the app.</p>
 <img src="screenshots/expense.png" width="400">
 
-Experience Screen
-_User can rate their overall experience with the app._
+<p><strong>Experience Screen</strong></p>
+<p>User can rate their overall experience with the app.</p>
 <img src="screenshots/experience.png" width="400">
 
-Group Chat Screen
-_Screen showing the group chat feature of the app._
+<p><strong>Group Chat Screen</strong></p>
+<p>Screen showing the group chat feature of the app.</p>
 <img src="screenshots/grpChat.png" width="400">
 
-Location Screen
-_User can rate the accuracy of the location feature._
+<p><strong>Location Screen</strong></p>
+<p>User can rate the accuracy of the location feature.</p>
 <img src="screenshots/location.png" width="400">
 
-Offline Mode Screen
+<p><strong>Offline Mode Screen</strong></p>
 <img src="screenshots/offline.png" width="400">
-
 
 ## Getting Started
 
