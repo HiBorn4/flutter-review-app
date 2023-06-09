@@ -15,6 +15,8 @@ Welcome to the Flutter Review the App repository! This app is designed to collec
 
 ## Screenshots
 
+<img src="screenshots/accomod.png" width="400">
+
 Here are some screenshots of the Flutter Review the App in action:
 
 convert (screenshots/accomod.png) -resize 10x10 screenshots/accomod_resized.png
